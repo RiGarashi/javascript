@@ -1,0 +1,37 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    background: #fef0e5;
+}
+.twentytwenty-before-label{
+    display:none
+}
+.twentytwenty-after-label{
+    display:none
+}
+.main{
+    margin: 0 auto;
+    width: 750px;
+}
+h1{
+    margin: 0 0 20px;
+    padding: 10px 0;
+    font-size: 170%;
+    color: #FA5221;
+    text-align: center;
+    background:#fff;
+    line-height: 1.5;
+}
+p{
+    margin: 0 0 20px;
+    color: #461900;
+}
+@media screen and (max-width:751px) {
+    .twentytwenty-wrapper.twentytwenty-horizen {
+        width: 100%;
+    }
+}
