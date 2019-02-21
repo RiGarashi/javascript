@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>サンプル｜Angular.js</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/common.css" type="text/css">
+</head>
+
+<body ng-app="mainModule">
+<header>
+<h1>Angular.jsを使って入力内容をリアルタイムで反映してみた</h1>
+<p>簡単なサンプルですみません。</p>
+</header>
+<div class="main" ng-controller="mainController">
+<p>お名前をご入力ください。</p>
+<strong>氏:</strong> {{personManagerInstance.getPersonFirstName()}}<br>
+<strong>名:</strong> {{personManagerInstance.getPersonLastName()}}<br>
+<strong>氏名:</strong> {{personManagerInstance.getPersonFullName(" ")}}<br>
+<br>
+<label>氏: <input type="text" ng-model="personInstance.firstName"/></label><br>
+<label>名: <input type="text" ng-model="personInstance.lastName"/></label>
+</div>
+</body>
+<script src="js/angular.min.js"></script>
+<script src="js/script.js"></script>
+</html>
